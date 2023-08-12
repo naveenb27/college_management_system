@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#888888;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-link ul li::after{
+    content: '';
+    height: 3px;
+    width: 75%;
+    display: block;
+    margin: auto;
+    background: #009688;
+    text-decoration: underline;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    background: #009688;
+    text-decoration: underline;
+    bottom: -5px;
+}
+.icecream{
+    display: flex;    
+}
+
+.choco{
+    flex:auto;
+}
+.cone{
+    flex:auto;
+}
+.kulfi{
+    flex:auto;
+}
+.cup{
+    flex:auto;
+}
+.Rolled{
+    flex:auto;
+}
+button{
+    margin-top: 20px;
+    height: 300px;
+    width: 90%;
+    border-radius: 4px;
+    background-size: cover;
+}
+.cone button{
+    background-image: url("chocobar.webp");   
+}
+.kulfi button{
+    background-image: url("Kulfi.jpg");
+}
+.cup button{
+    background-image: url("cup.jpg");
+}
+.choco button{
+    background-image: url("choco-bar-recipe-a.jpg");
+}
+.Rolled button{
+    background-image: url("Rolled-icecream.jpg");
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.lunch{
+    display:flex;
+}
+.rotti{
+    flex:auto;
+}
+.dosa{
+    flex:auto;
+}
+.curd{
+    flex:auto;
+}
+.noodles{
+    flex:auto;
+}
+.biriyani{
+    flex:auto;
+}
+.rotti button{
+    background-image: url("rotti.jpg");
+}
+.biriyani button{
+    background-image: url("biriyani.jpg");
+}
+.dosa button{
+    background-image: url("dosa.jpg");
+}
+.noodles button{
+    background-image: url("noodles.webp");
+}
+.curd button{
+    background-image: url("Curd-Rice-1-scaled-720x720.jpg");
+}
+
+h1{
+    text-align: center;
+    text-decoration: center;
+}

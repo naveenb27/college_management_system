@@ -1,0 +1,103 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #93FFE8;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.nav-link ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-link ul li::after{
+    content: '';
+    height: 3px;
+    width: 75%;
+    display: block;
+    margin: auto;
+    background: #1d6cff;
+    text-decoration: underline;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    background: #009688;
+    text-decoration: underline;
+    bottom: -5px;
+}
+
+.button{
+    display:flex;
+    margin-top: 120px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.user{
+    flex:auto;
+}
+.attendance{
+    flex:auto;
+}
+.bus{
+    flex:auto;
+}
+.canteen{
+    flex:auto;
+}
+.reminder{
+    flex: auto;
+}
+.button button{
+    height: 150px;
+    width:150px;
+    border-radius: 4px;
+    background-size: cover;
+}
+.user button{
+    background-image: url("user.png");
+}
+.notes button{
+    background-image: url("notes.jpg");
+}
+.attendance button{
+    background-image: url("attendance.jpg");
+}
+.bus button{
+    background-image: url("bus.avif");
+}
+.canteen button{
+    background-image: url("canteen.jpg");
+}
+.reminder button{
+    background-image: url("reminder.png");
+}
+.button button:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

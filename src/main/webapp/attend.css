@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+html, body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #F8F8FF;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td{
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #04AA6D;
+	color: white;
+}

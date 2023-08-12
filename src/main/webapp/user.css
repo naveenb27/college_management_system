@@ -1,0 +1,34 @@
+html, body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#888888;
+}
+.form h1, .form div{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    height:1000px;
+    width:400px;
+    margin:100px auto;
+    background-color: rgb(224, 212, 212);
+    border-radius:10px;
+}
+.form label, .form input, .form select{
+    margin-left: 15px;
+    margin-top: 18px;
+    align-items: center;
+}
+.form input{
+    border-radius: 5px;
+    border:black ;
+    padding: 3px;
+}
+.button input{
+    background-color:rgb(98, 203, 230);
+    border: none;
+    height: 30px;
+}
+.button input:hover{
+    cursor: pointer;
+}
